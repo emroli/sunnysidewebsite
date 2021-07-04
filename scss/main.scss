@@ -144,6 +144,7 @@ nav {
 .second-content h1 {
   font-family: "Fraunces";
   font-weight: 900;
+  color: $Verydarkdesaturatedblue;
 }
 
 .second-content p {
@@ -161,5 +162,192 @@ nav {
   text-underline-offset: -3px;
   text-decoration-color: rgba(245, 229, 1, 0.3);
   text-decoration-thickness: 6px;
+  font-size: 16px;
+}
+
+// THIRD CONTAINER
+
+.third-container {
+  width: 100%;
+  background-image: url(/dist/images/mobile/image-stand-out.jpg);
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.third-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3em 1em;
+  margin: auto;
+  gap: 2em;
+}
+
+.third-content h1 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: $Verydarkdesaturatedblue;
+}
+
+.third-content p {
+  line-height: 1.7rem;
+  font-size: 16px;
+  width: 100%;
+  color: $Darkgrayishblue;
+}
+
+.third-content a {
+  font-family: "Fraunces";
+  font-weight: 900;
+  text-decoration: underline;
+  color: black;
+  text-underline-offset: -3px;
+  text-decoration-color: rgba(245, 141, 222, 0.712);
+  text-decoration-thickness: 6px;
+  font-size: 16px;
+}
+
+// FOURTH CONTENT
+
+.fourth-container {
+  width: 100%;
+  background-image: url(/dist/images/mobile/image-graphic-design.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.fourth-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  gap: 1.5em;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  padding: 3.5em 0em;
+}
+
+.fourth-content h1 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: $Verydarkdesaturatedblue;
+  font-size: 30px;
+}
+
+.fourth-content p {
+  line-height: 1.7rem;
+  font-size: 16px;
+  width: 100%;
+  color: $Verydarkdesaturatedblue;
+}
+
+// FIFTH SECTION
+
+.fifth-container {
+  width: 100%;
+  background-image: url(/dist/images/mobile/image-photography.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.fifth-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  gap: 1.5em;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  padding: 3.5em 0em;
+}
+
+.fifth-content h1 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: $Verydarkdesaturatedblue;
+  font-size: 30px;
+}
+
+.fifth-content p {
+  line-height: 1.7rem;
+  font-size: 16px;
+  width: 100%;
+  color: $Verydarkdesaturatedblue;
+}
+
+// TESTIMONIALS
+
+.testimonials-wrapper {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 5em;
+}
+
+.testimonials-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 5em;
+  justify-content: space-between;
+  gap: 4em;
+}
+.testimonials-container h1 {
+  font-size: 18px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  color: $Grayishblue;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  // padding: 1em 0em;
+}
+
+.testimonials-image {
+  width: 70px;
+}
+.testimonials-image img {
+  border-radius: 50%;
+}
+
+.testimonials p {
+  line-height: 1.7rem;
+  font-size: 18px;
+  width: 100%;
+  color: $Darkgrayishblue;
+}
+
+.testimonials-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#t-name {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: black;
+}
+
+#t-title {
   font-size: 14px;
+  color: $Verydarkgrayishblue;
 }
