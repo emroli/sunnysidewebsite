@@ -55,15 +55,23 @@ nav {
   top: 7em;
   padding: 3em 2em;
   gap: 2em;
-  right: -100%; }
+  color: #818498;
+  font-size: 18px;
+  left: 150%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in-out; }
 
 .active {
-  right: inherit; }
+  left: 50%; }
+
+.navbar-links {
+  color: #818498;
+  font-size: 18px; }
 
 .active .navbar-links {
   justify-content: space-between;
-  color: #818498;
-  font-size: 18px; }
+  color: #818498; }
 
 .hamburger i {
   color: white;
@@ -71,12 +79,18 @@ nav {
 
 .button {
   text-transform: uppercase;
-  color: black;
+  color: #818498;
   background-color: #fad400;
   border-radius: 100px;
   padding: 1em 1.8em;
   font-size: 16px;
-  font-family: "Fraunces"; }
+  font-family: "Fraunces";
+  cursor: pointer; }
+
+#btn:hover > li {
+  border: 1;
+  background-color: pink;
+  color: white; }
 
 .container-items {
   display: flex;
@@ -297,3 +311,71 @@ nav {
 #t-title {
   font-size: 14px;
   color: #5a636c; }
+
+.box-wrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25vh 25vh;
+  background: yellowgreen; }
+
+.box-image-1 {
+  background-image: url(/dist/images/mobile/image-gallery-milkbottles.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.box-image-2 {
+  background-image: url(/dist/images/mobile/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.box-image-3 {
+  background-image: url(/dist/images/mobile/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.box-image-4 {
+  background-image: url(/dist/images/mobile/image-gallery-sugar-cubes.jpg);
+  background-position: center;
+  background-size: cover; }
+
+footer {
+  width: 100%;
+  background-color: #458c7e; }
+
+.footer-items {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  margin: auto; }
+
+.footer-logo {
+  width: 200px; }
+
+.footer-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  gap: 3em;
+  font-size: 1.1rem;
+  color: #25564b; }
+
+.social {
+  margin-top: 2em;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.social i {
+  font-size: 22px;
+  color: #25564b; }
+
+.social i:hover {
+  color: #fff; }
