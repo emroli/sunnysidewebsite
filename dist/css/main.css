@@ -69,6 +69,10 @@ nav {
   color: #818498;
   font-size: 18px; }
 
+.navbar-links:hover {
+  color: pink;
+  transition: 0.5s; }
+
 .active .navbar-links {
   justify-content: space-between;
   color: #818498; }
@@ -271,7 +275,9 @@ nav {
 .testimonials-wrapper {
   width: 100%;
   background-color: white;
-  padding-bottom: 5em; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .testimonials-container {
   width: 85%;
@@ -280,15 +286,16 @@ nav {
   align-items: center;
   margin: auto;
   margin-top: 5em;
-  justify-content: space-between;
-  gap: 4em; }
+  justify-content: space-between; }
 
-.testimonials-container h1 {
+.testimonial-title {
   font-size: 18px;
   font-family: "Fraunces";
   font-weight: 900;
   letter-spacing: 0.2rem;
-  color: #a7abae; }
+  color: #a7abae;
+  align-self: center;
+  margin-top: 5em; }
 
 .testimonials {
   display: flex;
@@ -378,6 +385,13 @@ footer {
   font-size: 1.1rem;
   color: #25564b; }
 
+.footer-links li {
+  color: #25564b; }
+
+.footer-links li:hover {
+  color: white;
+  transition: 0.5s; }
+
 .social {
   margin-top: 2em;
   width: 150px;
@@ -390,6 +404,7 @@ footer {
   color: #25564b; }
 
 .social i:hover {
+  transition: 0.5s;
   color: #fff; }
 
 @media only screen and (min-width: 600px) {
@@ -426,11 +441,11 @@ footer {
     position: initial;
     background-position: center;
     background-size: cover;
-    object-position: 20% 80%; }
+    background-image: url(/dist/images/desktop/image-header.jpg); }
   .container-items {
     width: auto;
     justify-content: flex-start;
-    height: 400px;
+    height: 500px;
     background-size: contain; }
   .container-items h1 {
     font-size: 3.5rem;
@@ -439,7 +454,7 @@ footer {
   .arrow img {
     height: 150px; }
   .second-wrapper {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: row-reverse; }
   .second-container {
@@ -464,7 +479,7 @@ footer {
     width: 80%;
     font-size: 18px; }
   .third-wrapper {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: row; }
   .third-container {
@@ -496,7 +511,37 @@ footer {
     width: 50%;
     height: initial; }
   .fourth-container {
-    background-repeat: no-repeat; }
+    background-image: url(/dist/images/desktop/image-graphic-design.jpg); }
+  .fifth-container {
+    background-image: url(/dist/images/desktop/image-photography.jpg); }
   .fifth-wrapper {
     width: 50%;
-    height: initial; } }
+    height: initial; }
+  .testimonials-container {
+    flex-direction: row;
+    height: 80%;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; }
+  .testimonial-title {
+    font-size: 18px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    color: #a7abae;
+    margin-top: initial;
+    margin-top: 7em; }
+  .testimonials-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    justify-content: center; }
+  .testimonials {
+    width: 25%;
+    height: 400px; }
+  .box-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50vh; } }
